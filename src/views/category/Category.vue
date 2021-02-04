@@ -8,6 +8,6 @@ export default {
     name: 'Category'
 }
 </script>
-<style>
+<style scoped>
 
 </style>

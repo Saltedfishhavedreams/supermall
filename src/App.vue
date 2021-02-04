@@ -7,7 +7,7 @@
 
 <script>
 import router from './route/index'
-import MainTabBar from 'components/content/MainTabBar'
+import MainTabBar from 'components/content/mainTabBar/MainTabBar'
 export default {
   name: 'App',
   router,
@@ -17,6 +17,6 @@ export default {
 }
 </script>
 
-<style>
-@import './assets/css/base.css'
+<style swiper>
+  @import './assets/css/base.css'
 </style>
