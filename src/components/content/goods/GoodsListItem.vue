@@ -1,13 +1,13 @@
 <template>
-    <div class="goods-item">
-        <img :src="commodity.show.img" alt="">
+    <div class="goods-item" @click="goodsClick">
+        <img :src="commodity.show.img" alt="" @load="imgLoad">
         <div class="goods-info">
             <p>{{commodity.title}}</p>
             <span class="price">{{commodity.cfav}}</span>
             <span class="collect">{{commodity.price}}</span>
         </div>
     </div>
-</template>
+</template>z
 <script>
 export default {
     props: {
@@ -17,6 +17,15 @@ export default {
                 return {}
             }
         }
+    },
+    methods: {
+      imgLoad() {
+        this.$bus.$emit('itemImageLoad')
+      },
+      
+      goodsClick() {
+        this.$router.push('/detail/' + this.commodity.iid)
+      }
     }
 }
 </script>

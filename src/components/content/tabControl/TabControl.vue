@@ -30,7 +30,7 @@ export default {
   }      
 }
 </script>
-<style>
+<style scoped>
   .tab-control {
       display: flex;
       text-align: center;
@@ -53,6 +53,6 @@ export default {
   }
 
   .active span {
-      border-bottom: 3px solid var(--color-tint);
+    border-bottom: 3px solid var(--color-tint);
   }
 </style>
